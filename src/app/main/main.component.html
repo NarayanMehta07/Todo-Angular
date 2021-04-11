@@ -1,0 +1,12 @@
+<ol class="list-group" *ngFor="let item of data; index as i;">
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+        <span class="badge bg-warning rounded-pill">{{i+1}}</span>
+        <div class="ms-2 me-auto">
+        <div class="fw-bold">{{item.name}}</div>
+        {{item.address}}
+        </div>
+        <span class="badge bg-primary rounded-pill">{{item.dob}}</span>
+        
+        <!-- <button type="button" class="btn btn-danger btn-sm" (click)="onClick()">Delete</button> -->
+ </li>
+</ol>
